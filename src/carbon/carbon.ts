@@ -43,13 +43,10 @@ export async function carbon(input: string) {
       width: elementBounds?.width || 0,
       height: Math.round(elementBounds?.height || 0) - 1
     };
-    await page.screenshot({
-      path: 'screenshot.png',
-      clip
-    });
-
+    await page.screenshot({ path: 'screenshot.png', clip });
     await browser.close();
   } catch (error) {
     console.error(error);
+    throw Error(error);
   }
 }
