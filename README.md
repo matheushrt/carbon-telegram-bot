@@ -38,7 +38,7 @@ app.post('/', async (req, res) => {
   } catch (error) {
     console.error(error);
   }
-  res.send('success');
+  res.send('message received in your chat');
 });
 
 app.listen(3000, () => {
@@ -63,7 +63,7 @@ app.post('/', async (req, res) => {
   } catch (error) {
     console.error(error);
   }
-  res.send('success');
+  res.send('message received in your chat');
 });
 
 app.listen(3000, () => {
