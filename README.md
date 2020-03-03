@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Telegram Bots [Telegram](https://telegram.org) can handle messages automatically.
+[Telegram](https://telegram.org) Bots can handle messages automatically.
 Users can interact with bots by sending messages in private or group chats that .
 
 This package is intended to listen to [Update messages](https://core.telegram.org/bots/api#update) received by your bot's server **/post** **webhook**. Then `carbon-telegram-bot` will listen to `pre-formatted` or `code` markdown and generate then reply the chat message with a beautiful [Carbon](http://carbon.now.sh) code snippet.
