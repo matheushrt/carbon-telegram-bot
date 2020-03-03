@@ -103,3 +103,45 @@ interface ChatPermissions {
   can_invite_users?: boolean;
   can_pin_messages?: boolean;
 }
+
+interface Update {
+  update_id: number;
+  message?: Message;
+  edited_message?: Message;
+  channel_post?: Message;
+  edited_channel_post?: Message;
+  inline_query?: InlineQuery;
+  chosen_inline_result?: ChosenInlineResult;
+  callback_query?: CallbackQuery;
+}
+
+interface InlineQuery {
+  id: string;
+  from: User;
+  location?: Location;
+  query: string;
+  offset: string;
+}
+
+interface ChosenInlineResult {
+  result_id: string;
+  from: User;
+  location?: Location;
+  inline_message_id?: string;
+  query: string;
+}
+
+interface Location {
+  longitude: number;
+  latitude: number;
+}
+
+interface CallbackQuery {
+  id: string;
+  from: User;
+  message?: Message;
+  inline_message_id?: string;
+  chat_instance: string;
+  data?: string;
+  game_short_name?: string;
+}
