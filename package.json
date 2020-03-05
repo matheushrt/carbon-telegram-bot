@@ -1,6 +1,6 @@
 {
   "name": "carbon-telegram-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package to generate beautiful code snippets to your telegram bot",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
