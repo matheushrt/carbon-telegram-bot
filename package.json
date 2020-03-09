@@ -1,6 +1,6 @@
 {
   "name": "carbon-telegram-bot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package to generate beautiful code snippets to your telegram bot",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,6 +20,14 @@
     "snippet"
   ],
   "author": "Matheus Souza <matheushrt@gmail.com> (https://github.com/matheushrt)",
+  "homepage": "https://github.com/matheushrt/carbon-telegram-bot#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matheushrt/carbon-telegram-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matheushrt/carbon-telegram-bot/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
