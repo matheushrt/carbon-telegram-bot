@@ -1,5 +1,7 @@
 # carbon-telegram-bot
 
+![Code Snippet](docs/snippet.png)
+
 ## Introduction
 
 [Telegram](https://telegram.org) Bots can handle messages automatically.
@@ -19,7 +21,18 @@ or using `yarn`:
 $ yarn add carbon-telegram-bot
 ```
 
-### Examples
+### Triggering the bot
+
+**carbon-telegram-bot** will always trigger when a message is sent in chat fomarted as `code` or `pre-formated` text as follows:
+
+````
+Markdown:
+`code` and ```pre-formatted```
+````
+
+More information: [Telegram markdown style](https://core.telegram.org/bots/api#markdownv2-style)
+
+### Implementation Examples
 
 ```js
 const express = require('express');
@@ -46,6 +59,12 @@ app.listen(3000, () => {
 });
 ```
 
+> Code snippet generated with above example:
+
+![Code Snippet](docs/example1.png)
+
+---
+
 ```js
 import express from 'express';
 import { carbonBot } from 'carbon-telegram-bot';
@@ -70,3 +89,11 @@ app.listen(3000, () => {
   console.log('Example app listening on port 3000!');
 });
 ```
+
+> Code snippet generated with above example:
+
+![Code Snippet](docs/example2.png)
+
+---
+
+Contributions are welcome. Just send me a PR.
